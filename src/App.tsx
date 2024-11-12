@@ -1,5 +1,5 @@
 function App() {
-  return <div>primeiro desafio hardcore</div>;
+  return <div>Adicione uma nova tarefa</div>;
 }
 
 export default App;
