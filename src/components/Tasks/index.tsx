@@ -1,3 +1,4 @@
+import { Task } from "../Task";
 import styles from "./tasks.module.css";
 
 export function Tasks() {
@@ -13,6 +14,10 @@ export function Tasks() {
           <span>2 de 5</span>
         </div>
       </div>
+      <Task />
+      <Task />
+      <Task />
+      <Task />
     </section>
   );
 }
