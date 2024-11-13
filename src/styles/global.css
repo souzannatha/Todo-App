@@ -30,4 +30,5 @@ body {
 
 button {
   cursor: pointer;
+  border: none;
 }

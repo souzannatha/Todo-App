@@ -1,5 +1,13 @@
+import { Header } from "./components/Header";
+import { Tasks } from "./components/Tasks";
+
 function App() {
-  return <div>Adicione uma nova tarefa</div>;
+  return (
+    <>
+      <Header />
+      <Tasks />
+    </>
+  );
 }
 
 export default App;
