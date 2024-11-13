@@ -1,0 +1,35 @@
+.taksContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+.taksHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.taksHeader p {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.taksHeader span {
+  color: var(--gray-200);
+  background: var(--gray-400);
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.taksHeader .textPurple {
+  color: var(--purple);
+}
