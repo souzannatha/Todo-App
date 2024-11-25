@@ -13,24 +13,33 @@ export function Header({ onAddTask }: HeaderProps) {
   function handleSubmit(event: FormEvent) {
     event.preventDefault();
 
+    if (!title.trim()) {
+      alert("Digite sua tarefa!");
+      return;
+    }
+
     onAddTask(title);
-    setTitle("");
+    setTitle(""); // Limpa o campo de entrada após adicionar a tarefa
   }
 
-  function handeChange(event: ChangeEvent<HTMLInputElement>) {
+  function handleChange(event: ChangeEvent<HTMLInputElement>) {
     setTitle(event.target.value);
   }
 
   return (
     <header className={styles.header}>
-      <img src={todoLogo} />
+      <img src={todoLogo} alt="Logo Todo" />
       <form className={styles.formContainer} onSubmit={handleSubmit}>
         <input
           placeholder="Adicione uma tarefa"
-          onChange={handeChange}
+          onChange={handleChange}
           value={title}
         />
-        <button>
+        <button
+          type="submit"
+          disabled={!title.trim()}
+          className={!title.trim() ? styles.disabledButton : ""}
+        >
           Criar
           <AiOutlinePlusCircle size={20} color="#fff" />
         </button>

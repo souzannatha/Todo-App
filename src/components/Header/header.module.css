@@ -54,3 +54,8 @@
   transition: 0.2s;
   background: var(--blue);
 }
+
+.disabledButton {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
