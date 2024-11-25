@@ -32,7 +32,7 @@ export function Header({ onAddTask }: HeaderProps) {
         />
         <button>
           Criar
-          <AiOutlinePlusCircle size={20} />
+          <AiOutlinePlusCircle size={20} color="#fff" />
         </button>
       </form>
     </header>
